@@ -1,0 +1,13 @@
+
+html
+  head
+    title= title
+  body
+    h1= title
+
+
+    each item in data
+        h2= item.gender
+        ul
+        each subItem in item.cats
+            li= subItem

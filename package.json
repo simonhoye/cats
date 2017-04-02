@@ -1,0 +1,30 @@
+{
+  "name": "cats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonhoye/cats.git"
+  },
+  "author": "@simonhoye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonhoye/cats/issues"
+  },
+  "homepage": "https://github.com/simonhoye/cats#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "node-fetch": "^1.6.3",
+    "pug": "^2.0.0-beta11"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.2.0"
+  }
+}
