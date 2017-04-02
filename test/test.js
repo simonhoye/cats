@@ -113,7 +113,7 @@ var mockTemplateData = [
 ];
 
 var ownersGenders = ['Male', 'Female'];
-var	maleCats = ['Garfield', 'Jim', 'Max', 'Tom'];
+var maleCats = ['Garfield', 'Jim', 'Max', 'Tom'];
 var femaleCats = ['Garfield', 'Simba', 'Tabby'];
 
 describe('Cat tests', function() {
@@ -129,19 +129,18 @@ describe('Cat tests', function() {
         done();
     });
 
-	it("should return alphabetically ordered list of males", function(done) {
-		expect(lib.getCatsByOwnersGender(mockData, "Male")).toEqual(maleCats);
+    it("should return alphabetically ordered list of males", function(done) {
+        expect(lib.getCatsByOwnersGender(mockData, "Male")).toEqual(maleCats);
         done();
-	});
+    });
 
-	it("should return alphabetically ordered list of females", function(done) {
-		expect(lib.getCatsByOwnersGender(mockData, "Female")).toEqual(femaleCats);
+    it("should return alphabetically ordered list of females", function(done) {
+        expect(lib.getCatsByOwnersGender(mockData, "Female")).toEqual(femaleCats);
         done();
-	});
+    });
 
     it("should return an array with of alphabetically sorted cats grouped by owners gender", function(done) {
         expect(lib.getTemplateData(mockData)).toEqual(mockTemplateData);
         done();
-    })
-
+    });
 });
