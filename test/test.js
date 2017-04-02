@@ -139,7 +139,7 @@ describe('Cat tests', function() {
         done();
     });
 
-    it("should return an array with of alphabetically sorted cats grouped by owners gender", function(done) {
+    it("should return an array of alphabetically sorted cats grouped by owners gender", function(done) {
         expect(lib.getTemplateData(mockData)).toEqual(mockTemplateData);
         done();
     });
